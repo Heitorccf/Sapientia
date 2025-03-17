@@ -1,75 +1,89 @@
-# Loan Default Prediction using Machine Learning
+# Validação e Avaliação de Modelos de Machine Learning
 
-## Project Overview
+## Descrição da Seção
+Esta seção tem como objetivo explorar e aplicar diferentes técnicas de validação e avaliação de modelos de machine learning, garantindo a seleção de modelos mais robustos e eficientes. Durante a seção, foram utilizadas métricas adequadas para cada tipo de problema, além de estratégias de balanceamento de dados para melhorar o desempenho dos modelos.
 
-This project focuses on building a Machine Learning model to classify clients of an automobile loan company as either **defaulters** (clients who fail to repay their loans on time) or **non-defaulters**. The goal is to help the company identify potential defaulters before approving their loan applications, thereby reducing financial losses.
+## Objetivos Alcançados
+- Validação de modelos utilizando o método hold-out e validação cruzada.
+- Avaliação de modelos por meio de diferentes métricas de desempenho.
+- Identificação das métricas mais apropriadas para diferentes tipos de problemas.
+- Aplicação de técnicas de balanceamento de dados (oversampling e undersampling).
+- Implementação de pipelines para validação correta de modelos.
 
-The company is currently facing three major challenges:
-1. **High Demand**: Increased demand for automobile loans.
-2. **Reduced Fleet**: Limited availability of vehicles for loan.
-3. **High Default Rate**: A significant number of clients are defaulting on their loans.
+## Tecnologias Utilizadas
+- **Python**
+- **Scikit-Learn** - Para construção e validação de modelos.
+- **Imbalanced-Learn** - Para balanceamento de dados.
+- **Matplotlib / Seaborn** - Para visualização de métricas e análise de desempenho.
+- **Pandas / NumPy** - Para manipulação e análise de dados.
 
-To address these issues, we will use a historical dataset provided by the company in CSV format. This dataset contains information about past clients, including whether they defaulted or not. Using this data, we will build and validate a classification model to predict client behavior.
+## Estrutura da Seção
+1. **Classificação de Dados**
+   - Criação de um modelo inicial.
+   - Utilização do método `score()`.
+   - Validação e avaliação do modelo.
+   - Análise da matriz de confusão.
+   
+2. **Métricas de Avaliação**
+   - Cálculo de acurácia, precisão e recall.
+   - Análise da curva ROC e curva Precisão x Recall.
+   - Geração de relatório de métricas.
+   
+3. **Validação Cruzada**
+   - Uso do KFold para separação dos dados.
+   - Validação cruzada utilizando diferentes métricas.
+   - Estratificação dos dados para melhor representatividade.
+   
+4. **Balanceamento de Dados**
+   - Aplicando oversampling e undersampling.
+   - Uso da biblioteca `imblearn` para balanceamento.
+   - Implementação de pipelines para garantir um fluxo adequado de treinamento e validação.
 
----
-
-## What We Will Do in This Project
-
-1. **Data Reading**: Load and explore the dataset.
-2. **Model Creation**: Build a classification model using Machine Learning techniques.
-3. **Model Validation**: Use strategies like train-test splits and cross-validation to evaluate the model's performance.
-4. **Model Evaluation**: Analyze key metrics such as **Accuracy**, **Recall**, **Precision**, and the **Confusion Matrix** to assess the model's effectiveness.
-5. **Performance Improvement**: Explore techniques to enhance the model's performance and select the best-performing model.
-
----
-
-## Key Concepts and Tools
-
-- **Machine Learning**: We will use classification algorithms to predict whether a client is likely to default.
-- **Python**: The project will be implemented using Python, leveraging libraries such as `pandas`, `scikit-learn`, and `numpy`.
-- **Evaluation Metrics**:
-  - **Accuracy**: Measures the proportion of correctly classified instances.
-  - **Recall**: Evaluates the model's ability to identify all defaulters.
-  - **Precision**: Assesses the model's ability to avoid false positives.
-  - **Confusion Matrix**: Provides a detailed breakdown of the model's predictions.
-
----
-
----
-
-# Previsão de Inadimplência em Empréstimos usando Machine Learning
-
-## Visão Geral do Projeto
-
-Este projeto tem como objetivo construir um modelo de Machine Learning para classificar clientes de uma empresa de empréstimo de automóveis como **inadimplentes** (clientes que não pagam seus empréstimos no prazo) ou **adimplentes**. O objetivo é ajudar a empresa a identificar possíveis inadimplentes antes de aprovar suas solicitações de empréstimo, reduzindo assim perdas financeiras.
-
-A empresa está atualmente enfrentando três grandes desafios:
-1. **Alta Demanda**: Aumento na demanda por empréstimos de automóveis.
-2. **Frota Reduzida**: Disponibilidade limitada de veículos para empréstimo.
-3. **Alta Taxa de Inadimplência**: Um número significativo de clientes está deixando de pagar seus empréstimos.
-
-Para resolver esses problemas, utilizaremos um conjunto de dados históricos fornecido pela empresa no formato CSV. Esse conjunto de dados contém informações sobre clientes anteriores, incluindo se eles foram inadimplentes ou não. Com base nesses dados, construiremos e validaremos um modelo de classificação para prever o comportamento dos clientes.
+## Conclusão
+Esta seção demonstrou a importância da correta validação e avaliação de modelos de machine learning, garantindo a escolha de modelos mais confiáveis e otimizados. Além disso, foram aplicadas técnicas de balanceamento de dados e pipelines para estruturar corretamente o fluxo de modelagem.
 
 ---
 
-## O Que Faremos Neste Projeto
+# Validation and Evaluation of Machine Learning Models
 
-1. **Leitura dos Dados**: Carregar e explorar o conjunto de dados.
-2. **Criação do Modelo**: Construir um modelo de classificação usando técnicas de Machine Learning.
-3. **Validação do Modelo**: Utilizar estratégias como divisão de dados (treino, validação e teste) e validação cruzada para avaliar o desempenho do modelo.
-4. **Avaliação do Modelo**: Analisar métricas-chave como **Acurácia**, **Recall**, **Precisão** e a **Matriz de Confusão** para avaliar a eficácia do modelo.
-5. **Melhoria de Desempenho**: Explorar técnicas para aprimorar o desempenho do modelo e selecionar a versão com melhor desempenho.
+## Section Description
+This section aims to explore and apply different techniques for validating and evaluating machine learning models, ensuring the selection of more robust and efficient models. Throughout the section, appropriate metrics were used for each type of problem, along with data balancing strategies to improve model performance.
 
----
+## Achieved Objectives
+- Model validation using the hold-out method and cross-validation.
+- Model evaluation through different performance metrics.
+- Identification of the most appropriate metrics for different types of problems.
+- Application of data balancing techniques (oversampling and undersampling).
+- Implementation of pipelines for proper model validation.
 
-## Conceitos e Ferramentas Principais
+## Technologies Used
+- **Python**
+- **Scikit-Learn** - For model building and validation.
+- **Imbalanced-Learn** - For data balancing.
+- **Matplotlib / Seaborn** - For metric visualization and performance analysis.
+- **Pandas / NumPy** - For data manipulation and analysis.
 
-- **Machine Learning**: Utilizaremos algoritmos de classificação para prever se um cliente tem probabilidade de ser inadimplente.
-- **Python**: O projeto será implementado em Python, utilizando bibliotecas como `pandas`, `scikit-learn` e `numpy`.
-- **Métricas de Avaliação**:
-  - **Acurácia**: Mede a proporção de instâncias classificadas corretamente.
-  - **Recall**: Avalia a capacidade do modelo de identificar todos os inadimplentes.
-  - **Precisão**: Avalia a capacidade do modelo de evitar falsos positivos.
-  - **Matriz de Confusão**: Fornece uma análise detalhada das previsões do modelo.
+## Section Structure
+1. **Data Classification**
+   - Creating an initial model.
+   - Using the `score()` method.
+   - Validating and evaluating the model.
+   - Confusion matrix analysis.
+   
+2. **Evaluation Metrics**
+   - Calculating accuracy, precision, and recall.
+   - Analysis of the ROC curve and Precision x Recall curve.
+   - Generating a metrics report.
+   
+3. **Cross-Validation**
+   - Using KFold for data separation.
+   - Cross-validation using different metrics.
+   - Stratification of data for better representativity.
+   
+4. **Data Balancing**
+   - Applying oversampling and undersampling.
+   - Using the `imblearn` library for balancing.
+   - Implementing pipelines to ensure a proper training and validation flow.
 
----
+## Conclusion
+This section demonstrated the importance of proper validation and evaluation of machine learning models, ensuring the selection of more reliable and optimized models. Additionally, data balancing techniques and pipelines were applied to correctly structure the modeling workflow.
